@@ -12,6 +12,9 @@ print("My name is Your Name")
 # Line 2: Your age
 # Line 3: Your favorite hobbyๅ
 # Write your code here:
+print("Titirat")
+print("20")
+print("listening to music")
 
 
 # Exercise 4: Print with Different Content
@@ -19,9 +22,10 @@ print("My name is Your Name")
 # - A number (any number you like)
 # - A word
 # - A sentence with spaces
-
 # Write your code here:
-
+print("12")
+print("multiple")
+print("I am learning Python programming!")
 
 
 # Exercise 5: Understanding Print Behavior
@@ -33,7 +37,7 @@ print("Third", "line", "with", "multiple", "arguments")
 # Exercise 6: Comments Practice
 # Add comments above each print statement explaining what it does
 
-# 
+
 print("Welcome to Python programming!")
 
 # 
