@@ -2,14 +2,14 @@
 # DEMO 1: Basic Arithmetic Operators
 # =============================================================================
 
-print("=" * 50)
+print("=" * 50) #= จำนวน 50 ตัว
 print("DEMO 1: Basic Arithmetic Operators")
 print("=" * 50)
 
 a = 15
 b = 4
 
-print(f"a = {a}, b = {b}")
+print(f"a = {a}, b = {b}") #print ค่าของตัวแปร a และ b
 print()
 
 # Addition (+)
@@ -36,7 +36,7 @@ print(f"Floor Division: {a} // {b} = {result_floor}")
 result_mod = a % b
 print(f"Modulo:         {a} % {b} = {result_mod}")
 
-# Exponentiation (**)
+# Exponentiation (**) ยกกำลัง
 result_exp = a ** b
 print(f"Exponentiation: {a} ** {b} = {result_exp}")
 
@@ -59,6 +59,8 @@ print(f"{num1} + {num2} = {num1 + num2}")
 print(f"{num1} - {num2} = {num1 - num2}")
 print(f"{num1} * {num2} = {num1 * num2}")
 
+#==เปรียบเทียบกับ num2 ว่าไม่เท่ากับ 0 เพื่อป้องกันการหารด้วยศูนย์
+#= 
 # ตรวจสอบการหารด้วยศูนย์
 if num2 != 0:
     print(f"{num1} / {num2} = {num1 / num2}")
