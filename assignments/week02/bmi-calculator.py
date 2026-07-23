@@ -14,5 +14,5 @@ elif bmi < 30.0:
 else:
     category = "Obese"
     
-print(f"Your BMI is: {bmi:.1f}")
-print(f"Your BMI Category: {category}")
+print(f"You BMI is: {bmi:.1f}")
+print(f"You BMI Category: {category}")
