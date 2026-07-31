@@ -1,4 +1,5 @@
 # Empty tuple
+# สร้างแล้วแก้ data ไม่ได้
 empty_tuple = ()
 another_empty_tuple = tuple()
 

@@ -10,7 +10,7 @@ print(f"Count of 2: {numbers.count(2)}") # 3
 # Find index
 print(f"Index of 3: {numbers.index(3)}")  # 2
 
-# Check membership
+# Check membership T / F
 print(f"Is 'red' in colors? {'red' in colors}")      # True
 print(f"Is 'yellow' in colors? {'yellow' in colors}") # False
 

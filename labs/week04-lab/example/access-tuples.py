@@ -22,5 +22,7 @@ print(f"Name: {name}, Age: {age}, Job: {job}")
 # Swapping variables using tuples
 a = 5
 b = 10
+temp = (5,10)
+a,b = temp
 a, b = b, a
 print(f"After swap: a = {a}, b = {b}")  # a = 10, b = 5
