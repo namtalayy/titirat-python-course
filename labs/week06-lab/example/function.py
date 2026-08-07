@@ -7,7 +7,7 @@
 # =============================================================================
 print("=== PART 1: BASIC FUNCTIONS ===")
 
-# Example 1: Simple function without parameters
+# Example 1: Simple function without parameters <-- # input ที่เราต้องใช้
 def say_hello():
     """A simple function that prints a greeting"""
     print("Hello, World!")
@@ -88,12 +88,12 @@ print(f"Sum of both results: {sum1 + sum2}")
 print()
 
 # Example 2: Function returning multiple values
-def get_circle_info(radius):
+def get_circle_info(radius): # ตัวแปรที่อยู่ def คือคนละตัวกับ ตัวแปรใน main
     """Calculates circle area and circumference"""
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
-    return area, circumference
+    return area, circumference # return มากกว่า 1 ได้
 
 print("Circle calculations:")
 radius = 5
@@ -116,6 +116,12 @@ print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
+
+# จงหาผลรันโปรแกรม Examlp 3 
+"""
+Using return values in expressions:
+multiply(4, 5) + square(3) = 20 + 9 = 29
+"""
 
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
