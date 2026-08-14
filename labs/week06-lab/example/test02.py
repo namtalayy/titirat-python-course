@@ -8,7 +8,7 @@ def convert_currency(amount, currency):
     else:
         print(f"{amount:.2f} USD = {amount * 32.0} THB")
     
-    if currency == "JYP":
+    if currency == "JPY":
         print(f"{amount:.2f} THB = {amount / 22.0} JPY")
     else:
         print(f"{amount:.2f} JPY = {amount * 22.0} THB")
