@@ -1,4 +1,4 @@
-class ClassName:
+class ClassName: # struct
     """Class docstring"""
     
     def __init__(self, parameters):
