@@ -28,7 +28,7 @@ print(f"Hello {name}")
 
 # Converting string to number
 apple = input("Enter a number: ")
-try:
+try: # ดักจับความผิดพลากที่ขาดเดาไม่ได้
     x = int(apple) - 10
     print(f"Result: {x}")
 except ValueError:
@@ -63,7 +63,7 @@ message = "hello"
 index = 0
 
 print("Method 1: Using for loop with enumerate")
-for i, char in enumerate(message):
+for i, char in enumerate(message): # enumerate อักษระ
     print(f"message[{i}] = {char}")
 
 print("\nMethod 2: Manual indexing")
@@ -75,7 +75,7 @@ for char in message:
 # ===========================
 # 5. CONCATENATION AND MULTIPLICATION
 # ===========================
-
+# ทำต่อ, ทำซ้ำ
 print("\n=== CONCATENATION AND MULTIPLICATION ===")
 str1 = 'Hello'
 str2 = 'World!'
@@ -102,19 +102,18 @@ print(greeting)
 # ===========================
 # 7. ITERATING AND COUNTING
 # ===========================
-
 print("\n=== ITERATING THROUGH STRING ===")
 count = 0
 text = 'Hello World'
-for letter in text:
-    if letter == 'l':
+for letter in text: # นับจำนวนอักษระ
+    if letter == 'l': # นับตัว l ใน text
         count += 1
 print(f"{count} letters 'l' found in '{text}'")
 
 # ===========================
 # 8. MEMBERSHIP TEST
 # ===========================
-
+# check ว่ามีข้อความนี้อยู่ในนั้นหรือมั้ย - ex. check @ in email
 print("\n=== MEMBERSHIP TEST ===")
 print("'a' in 'program':", 'a' in 'program')  # True
 print("'at' not in 'battle':", 'at' not in 'battle')  # False
@@ -152,10 +151,10 @@ print("Tab example:")
 print("Column1\tColumn2\tColumn3")
 
 print("Backslash example:")
-print("Path: C:\\Users\\Python")
+print("Path: C:\\Users\\Python") # Path: C:\Users\Python
 
 print("Quote examples:")
-print('He said, "What\'s there?"')
+print('He said, "What\'s there?"') # \'s เพื่อไม่ให้ ' error
 print("He said, \"What's there?\"")
 print('''He said, "What's there?"''')
 
@@ -185,13 +184,15 @@ sal = 20000
 
 # Different format styles
 str1 = '{},{},{}'.format(id_num, name, sal)
+str1 = f'{id_num},{name},{sal}'
 print(str1)  # 10,shankar,20000
 
 str2 = '{} - {} - {}'.format(id_num, name, sal)
+str2 = f'{id_num} - {name} - {sal}'
 print(str2)  # 10 - shankar - 20000
 
 str3 = 'id={}\nname={}\nsal={}'.format(id_num, name, sal)
-print(str3)
+print(str3) 
 
 # ===========================
 # 12. STRING METHODS EXAMPLES
@@ -200,38 +201,40 @@ print(str3)
 print("\n=== STRING METHODS ===")
 text = "welcome to the world of python"
 
-# Case methods
+# Case methods # เปลี่ยนลักษณะการแสดงผลเฉยๆ ไม่ได้เปลี่ยนข้อมูล
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Upper: {text.upper()}") # ตัวใหญ่
+print(f"Lower: {text.lower()}") # ตัวเล็ก
+print(f"Title: {text.title()}") # ตัวแรกของข้อความ
+print(f"Capitalize: {text.capitalize()}") # ทุกคำตัวแรก-เป็นตัวใหญ่
 
 # Search methods
-print(f"Find 'world': {text.find('world')}")
-print(f"Count 'o': {text.count('o')}")
-print(f"Starts with 'welcome': {text.startswith('welcome')}")
-print(f"Ends with 'python': {text.endswith('python')}")
+print(f"Find 'world': {text.find('world')}") # world อยู่ index ที่เท่าไหร่
+print(f"Count 'o': {text.count('o')}") # จำนวนตัวอักษระ
+print(f"Starts with 'welcome': {text.startswith('welcome')}") # ขึ้นต้นด้วย welcome จริงมั้ย
+print(f"Ends with 'python': {text.endswith('python')}") #
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}") # เปลี่ยนค่า python เป็น java
+words = text.split() # แบ่งข้อมูลให้เป็นก้อนย่อยๆ # ['welcome', 'to', 'the', 'world', 'of', 'java']
 print(f"Split into words: {words}")
-print(f"Join with '-': {'-'.join(words)}")
+print(f"Join with '-': {'-'.join(words)}") # welcome-to-the-world-of-python
 
-# Validation methods
+# Validation methods # การตรวจสอบ T/F
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}") # ตรวจสอบเป็น ตัวอักษระ หรือ ตัวเลข ทุกตัวมั้ย
+print(f"isalpha(): {test_str.isalpha()}") # ตรวจสอบเป็น ตัวอักษระ ทุกตัวมั้ย
+print(f"isdigit(): {test_str.isdigit()}") # ตรวจสอบเป็น ตัวเลข ทุกตัวมั้ย
+print(f"isupper(): {test_str.isupper()}") # ตรวจสอบเป็นตัวใหญ่ ทุกตัวมั้ย
+print(f"islower(): {test_str.islower()}") # ตรวจสอบเป็นตัวเล็ก ทุกตัวมั้ย
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
 # ===========================
-
+# ORD:ตัวอักษระ --> เลข ASCII
+# CHR:เลข ASCII --> ตัวอักษระ
+# ใช้เช็ค ค่าน้อย, ค่ามาก ของ source data
 print("\n=== ORD() AND CHR() FUNCTIONS ===")
 ch = 'R'
 print(f"ord('{ch}') = {ord(ch)}")
@@ -265,7 +268,7 @@ for comparison, result in comparisons:
 # ===========================
 # 15. STRING SLICING
 # ===========================
-
+# เฉือนข้อความ
 print("\n=== STRING SLICING ===")
 text = "python"
 print(f"Original string: {text}")
