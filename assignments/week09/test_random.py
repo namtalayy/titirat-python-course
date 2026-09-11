@@ -1,4 +1,4 @@
-import random
+import random # นำเข้า
 
 def test_random():
     random_number = random.randint(1, 100)
