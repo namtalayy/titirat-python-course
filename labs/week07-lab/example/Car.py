@@ -1,5 +1,6 @@
 class Car:
     # Class attribute (shared by all instances)
+    # fix data
     wheels = 4
     vehicle_type = "Car"
     
@@ -8,7 +9,7 @@ class Car:
         self.brand = brand
         self.model = model
         self.year = year
-        self.mileage = 0
+        self.mileage = 0 # ระยะทางสะสม
     
     def drive(self, distance):
         """Method to update mileage"""
@@ -19,12 +20,12 @@ class Car:
         """Method to get car information"""
         return f"{self.year} {self.brand} {self.model} - Mileage: {self.mileage} km"
     
-    @classmethod
+    @classmethod # ติดอยู่ที่ template
     def get_vehicle_type(cls):
         """Class method to access class attributes"""
-        return cls.vehicle_type
+        return cls.vehicle_type 
 
-# Creating instances
+# Creating instances --> สร้างวัตถุจาก class
 car1 = Car("Toyota", "Camry", 2022)
 car2 = Car("Honda", "Civic", 2021)
 
@@ -39,3 +40,5 @@ print(car2.get_info())
 # Using methods
 print(car1.drive(100))
 print(car2.drive(250))
+
+print(car1.drive(200))
