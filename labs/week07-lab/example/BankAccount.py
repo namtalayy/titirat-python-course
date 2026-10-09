@@ -1,4 +1,6 @@
 class BankAccount:
+    # def = method
+    # __init__ = constructor
     """A simple bank account class"""
     
     def __init__(self, account_holder, initial_balance=0):
@@ -30,14 +32,14 @@ class BankAccount:
         """Method to check balance"""
         return f"Current balance: ${self.balance}"
     
-    def get_transaction_history(self):
+    def get_transaction_history(self): # ดูรายการธุรกรรม
         """Method to get transaction history"""
         if self.transaction_history:
             return "\n".join(self.transaction_history)
         else:
             return "No transactions yet"
 
-# Example usage
+# Example usage การใช้งาน class หรือ การสร้างวัตถุจาก class
 account = BankAccount("John Doe", 1000)
 print(account.get_balance())
 print(account.deposit(500))
