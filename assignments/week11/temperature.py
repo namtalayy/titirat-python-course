@@ -22,4 +22,24 @@ Highest: 28 C
 Lowest: 19 C
 
 """
+
+def get_temperatures():
+    temp = [22, 25, 19, 26, 30, 21, 28]
+    return temp # <-- local
     
+def analyze_temps(temp_list):
+    avg = sum(temp_list) / 7
+    high = max(temp_list)
+    low = min(temp_list)
+    
+    return (avg, high, low)
+    
+def display_analysis(avg, high, low):
+    print("Temperature Analysis for the Week: ")
+    print(f"Average: {avg:.1f} C")
+    print(f"Highest: {high:.1f} C")
+    print(f"Lowest: {low:.1f} C")
+    
+temp = get_temperatures()
+avg, high, low = analyze_temps(temp)
+display_analysis(avg, high, low)
