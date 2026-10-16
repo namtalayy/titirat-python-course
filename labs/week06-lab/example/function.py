@@ -7,7 +7,11 @@
 # =============================================================================
 print("=== PART 1: BASIC FUNCTIONS ===")
 
+<<<<<<< HEAD
 # Example 1: Simple function without parameters <-- # input ที่เราต้องใช้
+=======
+# Example 1: Simple function without parameters
+>>>>>>> upstream/main
 def say_hello():
     """A simple function that prints a greeting"""
     print("Hello, World!")
@@ -88,12 +92,20 @@ print(f"Sum of both results: {sum1 + sum2}")
 print()
 
 # Example 2: Function returning multiple values
+<<<<<<< HEAD
 def get_circle_info(radius): # ตัวแปรที่อยู่ def คือคนละตัวกับ ตัวแปรใน main
+=======
+def get_circle_info(radius):
+>>>>>>> upstream/main
     """Calculates circle area and circumference"""
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
+<<<<<<< HEAD
     return area, circumference # return มากกว่า 1 ได้
+=======
+    return area, circumference
+>>>>>>> upstream/main
 
 print("Circle calculations:")
 radius = 5
@@ -117,12 +129,15 @@ result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
 
+<<<<<<< HEAD
 # จงหาผลรันโปรแกรม Examlp 3 
 """
 Using return values in expressions:
 multiply(4, 5) + square(3) = 20 + 9 = 29
 """
 
+=======
+>>>>>>> upstream/main
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
 # =============================================================================
@@ -224,8 +239,13 @@ def is_strong_password(password):
     if len(password) < 8:
         return False, "Password too short (minimum 8 characters)"
     
+<<<<<<< HEAD
     has_letter = any(c.isalpha() for c in password) # มีตัวอักษร
     has_number = any(c.isdigit() for c in password) # มีตัวเลข
+=======
+    has_letter = any(c.isalpha() for c in password)
+    has_number = any(c.isdigit() for c in password)
+>>>>>>> upstream/main
     
     if not has_letter:
         return False, "Password must contain at least one letter"

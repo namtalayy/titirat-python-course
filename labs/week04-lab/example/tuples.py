@@ -1,5 +1,8 @@
 # Empty tuple
+<<<<<<< HEAD
 # สร้างแล้วแก้ data ไม่ได้
+=======
+>>>>>>> upstream/main
 empty_tuple = ()
 another_empty_tuple = tuple()
 

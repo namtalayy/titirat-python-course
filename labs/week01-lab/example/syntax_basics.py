@@ -6,7 +6,11 @@ Learn about variables, data types, and basic Python syntax.
 # Exercise 1: Variables and Assignment
 # Create variables for the following information about yourself:
 name = "Your Name Here"  # Replace with your actual name
+<<<<<<< HEAD
 age = 20  # Replace with your actual age not longinteger
+=======
+age = 20  # Replace with your actual age
+>>>>>>> upstream/main
 height = 5.8  # Replace with your height in feet
 is_student = True  # True or False
 
@@ -23,7 +27,11 @@ my_integer = 42
 my_float = 3.14
 my_boolean = False
 
+<<<<<<< HEAD
 # Use type() to see the data type and recheck types
+=======
+# Use type() to see the data type
+>>>>>>> upstream/main
 print("Type of my_string:", type(my_string))
 print("Type of my_integer:", type(my_integer))
 print("Type of my_float:", type(my_float))
@@ -33,7 +41,11 @@ print("Type of my_boolean:", type(my_boolean))
 first_name = "John"
 last_name = "Doe"
 
+<<<<<<< HEAD
 # Concatenate strings 
+=======
+# Concatenate strings
+>>>>>>> upstream/main
 full_name = first_name + " " + last_name
 print("Full name:", full_name)
 
@@ -49,9 +61,15 @@ print("Addition:", num1 + num2)
 print("Subtraction:", num1 - num2)
 print("Multiplication:", num1 * num2)
 print("Division:", num1 / num2)
+<<<<<<< HEAD
 print("Integer Division:", num1 // num2) #จำนวนเต็ม
 print("Remainder (Modulo):", num1 % num2) #เอาแค่เศษ
 print("Power:", num1 ** num2) #ยกกำลัง
+=======
+print("Integer Division:", num1 // num2)
+print("Remainder (Modulo):", num1 % num2)
+print("Power:", num1 ** num2)
+>>>>>>> upstream/main
 
 # Exercise 5: Variable Reassignment
 # Start with a variable and change its value
@@ -77,6 +95,7 @@ print("a =", a, "b =", b, "c =", c)
 # Complete the following assignments:
 
 # String variable containing your favorite color
+<<<<<<< HEAD
 favorite_color = 'blue'
 
 # Integer variable with the current year
@@ -87,6 +106,18 @@ favorite_number = 12
 
 # Boolean variable indicating if you like pizza
 likes_pizza = False
+=======
+favorite_color = 
+
+# Integer variable with the current year
+current_year = 
+
+# Float variable with your favorite number (with decimal)
+favorite_number = 
+
+# Boolean variable indicating if you like pizza
+likes_pizza = 
+>>>>>>> upstream/main
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)

@@ -37,7 +37,6 @@ print("Third", "line", "with", "multiple", "arguments")
 # Exercise 6: Comments Practice
 # Add comments above each print statement explaining what it does
 
-
 print("Welcome to Python programming!")
 
 # 

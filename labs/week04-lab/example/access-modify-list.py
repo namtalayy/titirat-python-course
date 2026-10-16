@@ -5,9 +5,15 @@ print(f"First fruit: {fruits[0]}")      # apple
 print(f"Second fruit: {fruits[1]}")     # banana
 print(f"Last fruit: {fruits[4]}")       # kiwi
 
+<<<<<<< HEAD
 # Negative indexing # ถอยหลัง
 print(f"Last fruit: {fruits[-1]}")      # kiwi
 print(f"Second last: {fruits[-2]}")     # grape        
+=======
+# Negative indexing
+print(f"Last fruit: {fruits[-1]}")      # kiwi
+print(f"Second last: {fruits[-2]}")     # grape
+>>>>>>> upstream/main
 
 # List slicing
 print(f"First 3 fruits: {fruits[0:3]}")     # ['apple', 'banana', 'orange']
@@ -29,7 +35,11 @@ print(fruits)  # ['pear', 'cherry', 'orange']
 fruits.append("grape")           # Add to end
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape']
 
+<<<<<<< HEAD
 fruits.insert(1, "banana")  # index, data  # Insert at specific position
+=======
+fruits.insert(1, "banana")       # Insert at specific position
+>>>>>>> upstream/main
 print(fruits)  # ['pear', 'banana', 'cherry', 'orange', 'grape']
 
 fruits.extend(["kiwi", "apple"]) # Add multiple elements
@@ -39,7 +49,11 @@ print(fruits)  # ['pear', 'banana', 'cherry', 'orange', 'grape', 'kiwi', 'apple'
 fruits.remove("banana")          # Remove first occurrence
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape', 'kiwi', 'apple']
 
+<<<<<<< HEAD
 removed_fruit = fruits.pop()  # ลบขวาสุด และเก็บในตัวแปร  # Remove and return last element
+=======
+removed_fruit = fruits.pop()     # Remove and return last element
+>>>>>>> upstream/main
 print(f"Removed: {removed_fruit}")  # apple
 print(fruits)  # ['pear', 'cherry', 'orange', 'grape', 'kiwi']
 
@@ -50,5 +64,9 @@ print(fruits)  # ['pear', 'orange', 'grape', 'kiwi']
 del fruits[0]                    # Delete element at index 0
 print(fruits)  # ['orange', 'grape', 'kiwi']
 
+<<<<<<< HEAD
 fruits.clear() # Remove all elements
+=======
+fruits.clear()                   # Remove all elements
+>>>>>>> upstream/main
 print(fruits)  # []

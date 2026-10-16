@@ -18,10 +18,17 @@ class Animal:
 # Child class (Derived class)
 class Dog(Animal):
     def __init__(self, name, breed):
+<<<<<<< HEAD
         super().__init__(name, "Canine")  # Call parent constructor # super พูดถึงแม่
         self.breed = breed
     
     # Method overriding ได้รับการถ่ายถอดจากแม่
+=======
+        super().__init__(name, "Canine")  # Call parent constructor
+        self.breed = breed
+    
+    # Method overriding
+>>>>>>> upstream/main
     def make_sound(self):
         print(f"{self.name} barks: Woof!")
     
@@ -45,7 +52,11 @@ class Cat(Animal):
 dog = Dog("Max", "Golden Retriever")
 cat = Cat("Whiskers", "Orange")
 
+<<<<<<< HEAD
 dog.eat()        # Inherited method สามารถต่อยอด code ของเราหรือคนอื่นได้
+=======
+dog.eat()        # Inherited method
+>>>>>>> upstream/main
 dog.make_sound() # Overridden method
 dog.fetch()      # Dog-specific method
 
